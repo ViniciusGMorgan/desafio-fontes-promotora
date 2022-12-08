@@ -48,12 +48,14 @@ Seguem as rotas desejadas para o desafio proposto.
 
 A rota deve receber name, e username dentro do corpo da requisição. Ao cadastrar um novo usuário,
 ele deve ser armazenado dentro de um objeto no seguinte formato:
+<br>
 {
 id: 'uuid',
 name: 'João Silva',
 password: '\***\*\*\*\*\*\***',
 username: 'joao.silva',
 }
+<br>
 Certifique-se de que a rota não permita usuários duplicados.
 
 ### POST /project
@@ -63,7 +65,7 @@ A rota deve receber title, zip_code, deadline e cost dentro do corpo da requisi�
 username contendo o username do usuário dentro do header da requisição. Ao criar um novo
 project, ele deve ser armazenado dentro do banco referenciado ao usuário que está criando esse
 projeto. Cada projeto deverá estar no seguinte formato:
-```bash
+<br>
 {
  id: 'uuid'
  title: 'Nome do projeto',
@@ -75,7 +77,7 @@ projeto. Cada projeto deverá estar no seguinte formato:
  created_at: '2022-09-26T00:00:00.000Z'
  updated_at: '2022-09-26T00:00:00.000Z'
 }
-```
+<br>
 
 ### GET /projects
 
