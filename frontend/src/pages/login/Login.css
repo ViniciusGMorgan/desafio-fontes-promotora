@@ -1,0 +1,73 @@
+.loginMain {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/grunge-wall-texture.jpg");
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loginInputGroup {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 300px !important;
+  margin: 30px 0px 20px 0px !important;
+}
+
+.loginInput {
+  border-radius: 8px !important;
+}
+
+.loginInputPassword {
+  border-radius: 8px 0px 0px 8px !important;
+}
+
+.loginImage {
+  margin: 50px 0;
+  width: 150px;
+}
+
+.loginButton {
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 7px !important;
+  font-size: 12pt !important;
+  font-weight: bold !important;
+  background-color: #191c1e !important;
+  border: 1px solid #191c1e !important;
+}
+
+.loginButtonGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.show-password {
+  border-radius: 0px 8px 8px 0px !important;
+  background-color: #191c1e !important;
+  border: 1px solid #191c1e !important;
+}
+
+.loginError {
+  text-align: center;
+  font-size: 13pt;
+  color: #db2424;
+  width: 300px;
+}
+
+.loginIcon {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.loginText {
+  font-weight: bold;
+  text-align: center;
+}

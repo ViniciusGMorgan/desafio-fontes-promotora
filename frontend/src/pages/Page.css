@@ -1,0 +1,70 @@
+.pageContainer {
+  width: 100%;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+.pageButtonBlue {
+  background-color: var(--loginButton) !important;
+  border: 1px solid var(--loginButton) !important;
+}
+
+.pageButton,
+.pageButtonBlue {
+  width: 100px;
+  border-radius: 7px !important;
+  margin: 10px;
+  font-size: 10pt !important;
+  font-weight: bold !important;
+}
+
+.pageButtonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pageFormContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.pageFlex {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pageContent {
+  width: 100%;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px #00000030;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px !important;
+}
+
+.pageContent.w650 {
+  width: 650px;
+  max-width: 100%;
+}
+
+.pageContent.withoutSearch {
+  margin-right: 0;
+}
+
+.pageLabelAutocomplete {
+  margin: 10px 0px 0px 0px;
+}
+
+.rs-picker-toggle-value {
+  color: #575757 !important;
+}

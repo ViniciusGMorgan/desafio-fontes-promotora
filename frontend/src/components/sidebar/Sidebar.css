@@ -1,0 +1,145 @@
+/* Menu */
+@media (max-width: 800px) {
+  .sideBarContainer {
+    display: none;
+  }
+}
+
+.sideBarContainer {
+  left: 0;
+  top: 0;
+  z-index: 3;
+  min-width: 62px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  color: #ffffff;
+  overflow: hidden;
+  transition: 200ms ease;
+  background-color: #ff5806;
+}
+
+.sideBarScroll {
+  max-height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 180px;
+}
+
+.displayBlock {
+  display: block !important;
+}
+
+.displayNone {
+  display: none;
+}
+
+.sideBarContainer:hover {
+  width: 300px;
+}
+
+.sideBarContainer:hover .sideBarLogo.logoOpen {
+  display: block !important;
+}
+
+.sideBarContainer:hover .sideBarLogo.logoClose {
+  display: none !important;
+}
+
+.sideBarContainer:hover span.navbar__brand {
+  display: block;
+}
+
+.sideBarContainer.show {
+  width: 300px;
+}
+
+.sideBarContainer .sideBarItem {
+  padding: 16px;
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 500ms ease-in;
+}
+
+.sideBarContainer .sideBarItem:hover {
+  background-color: var(--sidebarSelect) !important;
+}
+
+.sideBarContainer span.navbar__brand {
+  flex: 1;
+  display: none;
+  margin-left: 16px;
+  transition: color 500ms ease;
+}
+
+.sideBarContainer span.navbar__brand:hover {
+  color: #bdbdbd;
+}
+
+.sideBarContainer .sideBarItem i.arrow {
+  opacity: 0;
+  transition: 300ms ease;
+}
+
+.sideBarContainer .sideBarItem:hover i.arrow {
+  opacity: 1;
+}
+
+.sideBarContainer .sideBarItem i.expand {
+  transform: rotate(90deg);
+}
+
+.submenu {
+  height: 0;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+.submenu.show {
+  height: auto;
+  opacity: 1;
+}
+
+.sideBarLogoContainer {
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBarLogo {
+  height: 44px;
+  min-width: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sideBarLogo.logoOpen {
+  width: 150px;
+  height: 150px;
+  background-image: url(../../assets/images/logo-fontes.svg);
+}
+.sideBarLogo.logoClose {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(../../assets/images/favicon-fontes.png);
+}
+
+.sideBarSubMenuItem {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sideBarItemSelected {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--sidebarBackground);
+}

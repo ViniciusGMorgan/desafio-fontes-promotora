@@ -1,0 +1,49 @@
+.appContainer {
+  background-image: url("./assets/images/grunge-wall-texture.jpg");
+  min-height: 100vh;
+  height: auto;
+}
+
+.routeMain {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.routerContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.routerContainer.menuOpen {
+  margin: 0 16px 0 316px;
+}
+
+@media (max-width: 820px) {
+  .routeMain {
+    margin: 0 16px;
+  }
+}
+
+@media (min-width: 821px) {
+  .routerContainer.menuClose {
+    margin: 0 16px 0 78px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
