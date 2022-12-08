@@ -44,7 +44,7 @@ descritos nas rotas da aplicação.
 <br>
 Seguem as rotas desejadas para o desafio proposto.
 
-#### POST /users
+### POST /users
 
 A rota deve receber name, e username dentro do corpo da requisição. Ao cadastrar um novo usuário,
 ele deve ser armazenado dentro de um objeto no seguinte formato:
@@ -56,7 +56,7 @@ username: 'joao.silva',
 }
 Certifique-se de que a rota não permita usuários duplicados.
 
-#### POST /project
+### POST /project
 
 <br>
 A rota deve receber title, zip_code, deadline e cost dentro do corpo da requisição e, uma propriedade
@@ -77,31 +77,31 @@ projeto. Cada projeto deverá estar no seguinte formato:
 }
 ```
 
-#### GET /projects
+### GET /projects
 
 A rota deve receber, pelo header da requisição, uma propriedade username contendo o username
 do usuário e retornar uma lista com todos os projetos desse usuário.
 
-#### GET /project
+### GET /project
 
 A rota deve receber o id do projeto, e retornar as informações do mesmo, e ao invés de mostrar o
 número do CEP (zip_code) deverá exibir a localização (Cidade/UF) onde o projeto será executado,
 sendo assim deverá ser realizada uma chamada API de onde essa informação possa ser obtida.
 Pode ser usada a seguinte documentação (ou alguma outra de sua preferência):
 
-#### PUT /projects/:id
+### PUT /projects/:id
 
 A rota deve receber, pelo header da requisição, uma propriedade username contendo o username
 do usuário e receber as propriedades title, zip_code, cost e deadline, dentro do corpo. É preciso validar
 que cada usuário só consiga obviamente editar seus próprios projetos.
 
-#### PATCH /projects/:id/done
+### PATCH /projects/:id/done
 
 A rota deve receber, pelo header da requisição, uma propriedade username contendo o username
 do usuário e alterar a propriedade done para true no project marcando assim o projeto como
 concluído.
 
-#### DELETE /projects/:id
+### DELETE /projects/:id
 
 A rota deve receber, pelo header da requisição, uma propriedade username contendo o username
 do usuário e excluir o projeto, observando que cada usuário só pode excluir obviamente seus
