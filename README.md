@@ -51,7 +51,7 @@ ele deve ser armazenado dentro de um objeto no seguinte formato:
 {
 id: 'uuid',
 name: 'João Silva',
-password: '****\*\*\*****',
+password: '\***\*\*\*\*\*\***',
 username: 'joao.silva',
 }
 Certifique-se de que a rota não permita usuários duplicados.
