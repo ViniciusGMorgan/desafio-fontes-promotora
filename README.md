@@ -106,7 +106,9 @@ concluído.
 A rota deve receber, pelo header da requisição, uma propriedade username contendo o username
 do usuário e excluir o projeto, observando que cada usuário só pode excluir obviamente seus
 próprios projetos.
-Frontend
+
+## Frontend
+
 <br>
 Para o frontend deve-se criar uma tela onde seja possível criar usuários e outra que possa ser feito
 a gestão dos projetos (CRUD) e marca-los com concluído. Todas as funcionalidades só deverão estar
